@@ -1,0 +1,109 @@
+body{
+ margin:0;
+ font-family:sans-serif;
+ text-align:center;
+ background-color:rgb(14, 69, 69)
+}
+#page-heading{
+    text-align:center;
+    margin-top:25px;
+    color:red;
+}
+#contact-list-container ul{
+    padding:0;
+    list-style:none;
+    margin-left:25%;;
+    margin-right:25%;
+}
+.contact{
+    display:flex;
+    padding:3px 10px;
+    border:1px solid black;
+    border-radius:10px;
+    box-shadow: 3px 5px 3px rgb(11, 11, 13);
+    color:white;
+    background-color: rgb(115, 121, 114);
+}
+.contact .details{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:90%;
+    font-family:cursive;
+}
+.contact:hover{
+    background-color:rgb(51, 15, 234);
+    transition: width 0.5s ease-in-out, height 0.5s ease-out, background-color 0.5s ease-in-out;
+
+}
+.contact .delete-button{
+    width:10%;
+    padding : 3px;
+    text-align:center;
+    margin-top:5px;
+
+}
+.contact .delete-button{
+    color:white;
+   
+    /* background-color:red; */
+}
+.delete-button:hover{
+    cursor:pointer;
+    
+}
+.contact p{
+    margin:5px 0px; 
+}
+#contact-form input{
+    border:2px solid rgb(29, 10, 9);
+    border-left:20px;
+    height:30px;
+    width:250px;
+    padding:10px;
+    border-top-right-radius:10px;
+    background-color:rgb(213, 223, 224);
+    color:rgb(33, 1, 1);
+    box-shadow:(1px 1px 10px 10px rgb(red, green, blue))
+}
+#contact-form input:hover{
+    background-color:white;
+  
+    border:2px solid blue;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:5px;
+    transition : width 1.5s ease-in-out;
+}
+#contact-form button{
+    background-color:rgb(236, 9, 9);
+    color:rgb(80, 14, 223);
+    width:100px;
+    height:30px;
+    margin:4px;
+    padding:1px;
+    font-size:15px;
+}
+#contact-form button:hover{
+    background-color:rgb(215, 237, 17);
+    color:rgb(212, 46, 13);
+  font-style:italic;
+}
+#add-contact{
+    margin:3rem;
+    padding:3px;
+    height:100px;
+    padding-top:5rem;
+    margin-left:30rem;
+    margin-right:30rem;
+    margin-bottom:40rem;
+    border:1px solid rgb(11, 50, 205);
+    border-radius:10% 5%;
+    background-color:rgb(110, 122, 123);
+}
+#contact-form #name{
+    font-size: larger;
+}
+#contact-form #phone{
+    font-size: larger;
+}
